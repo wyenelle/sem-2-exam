@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="footer-bg  h-full">
             <div className="footer-text bg-black/70 h-full text-white flex flex-col justify-center items-center gap-4 ">
                 <h1 className="footer-header text-center capitalize text-4xl font-extrabold w-7/12 mx-auto">
-                    we've got you covered here at <span className='text-red-500 text-4xl font-extrabold'>AutoZone</span>. your satisfaction means a lot to us 
+                    At <span className='text-red-500 text-4xl font-extrabold'>AutoZone</span>. your satisfaction means a lot to us 
                 </h1>
                 <div className="capitalize mt-4 bg-red-500 border border-red-500 p-3 rounded-md text-white font-bold">
                     try us now

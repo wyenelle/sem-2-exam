@@ -1,0 +1,17 @@
+.attachment{
+    background: url('../../assets/unsplash/campbell-3ZUsNJhi_Ik-unsplash.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 80vh;
+}
+.arrow-right{
+    animation: move-right 4s infinite
+}
+.arrow-left{
+    animation: move-left 4s infinite
+}
+@keyframes move-right{
+    0%{
+        
+    }
+}
