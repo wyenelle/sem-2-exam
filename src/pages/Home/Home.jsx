@@ -8,6 +8,7 @@ import Features from '../../component/Features/Features'
 import Exhibition from '../../component/Exhibition'
 import Awesome from '../../component/Awesome/Awesome'
 import Testimonial from '../../component/Testimonials/Testimonial'
+import Benefits from '../../component/Benefits/Benefits'
 const Home = () => {
 useEffect(()=>{
   AOS.init()
@@ -24,14 +25,15 @@ useEffect(()=>{
       <div className="w-full">
         <Header />
         <Features/>
-          <div className='h-60  my-2'>
-            <Exhibition />
-          </div>
           <Awesome/>
       </div>
       <div>
         <Testimonial />
+        <Benefits/>
       </div>
+          <div className='h-60  my-2'>
+            <Exhibition />
+          </div>
     </main>
   )
 }

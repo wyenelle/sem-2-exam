@@ -10,7 +10,7 @@ import SubInfo from './component/info/SubInfo'
 import axios from 'axios'
 import ErrorBoundary from './component/ErrorBoundary'
 import BoundaryTest from './component/BoundaryTest'
-import About from './component/About/About'
+import About from './pages/About/About'
 import Footer from './component/Footer/Footer'
 
 function App() {
