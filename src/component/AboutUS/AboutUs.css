@@ -1,4 +1,7 @@
 .about-head{
     background: url('../../assets/about/thread-69451558-12676338104478950268.png');
-    background-size: 100% 100%;
+    background-size: 100vh;
+}
+.header-grid{
+    height: 86vh;
 }

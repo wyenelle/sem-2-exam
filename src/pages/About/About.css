@@ -1,18 +1,30 @@
-.about-shape{
+/* .about-shape{
     position: relative;
     height: 1000px;
     clip-path: polygon(0 0, 100% 0, 100% 66%, 0 100%);
-}
-.about-img{
-    width: 80%;
-    height: 700px;
-}
+} */
+
 .circle-icon{
     height: 200px;
     width: 200px;
     border-radius: 50%;
     background-color: white;
     /*  */
+}
+.exhibition-about{
+    height: 70vh;
+}
+.feature-css{
+    height: 265vh;
+}
+.feat-css{
+    height:50vh;
+    margin-top: 5em;
+}
+@media screen and (min-width: 600px){
+    .feature-css{
+        height: 70vh;
+    }
 }
 .abs{
     position: absolute;

@@ -2,10 +2,11 @@ import React from 'react'
 import './Welcome.css'
 import speedometer from '../../assets/cars/speedometer.jpeg'
 import {FaCaretRight,FaAngleDoubleRight} from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 const Welcome = () => {
   return (
     <section>
-        <div className="grid grid-cols-2 p-5 text-white md:text-white bg-black">
+        <div className=" welcome grid grid-cols-2 p-5 text-white md:text-white bg-black">
             <div className="col-span-2 md:col-span-1">
                 <div className="welcome-text">
                     <h2 className='font-extrabold text-2xl my-3'>Welcome</h2>
@@ -38,6 +39,9 @@ const Welcome = () => {
 
                         
                     
+                <Link to='/about'>
+                <button className='bg-white text-black px-3 my-6 h-auto welcome-button capitalize rounded py-3 font-extrabold border'> know more abou us</button>
+                </Link>
                 </div>
             </div>
             <div className="col-span-1 hidden md:block bg-black ">
@@ -45,6 +49,8 @@ const Welcome = () => {
                 <img src={speedometer} alt='speedometer' className='' />
                 </div>
             </div>
+
+
         </div>
     </section>
   )

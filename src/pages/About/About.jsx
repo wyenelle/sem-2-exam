@@ -1,25 +1,18 @@
 import React from "react";
 import { useState } from "react";
 import { Link, Route, Routes } from "react-router-dom";
-import {FaRocket,FaCar,FaHandPointUp,FaDesktop} from 'react-icons/fa'
 import "./About.css";
-import builder from '../../assets/about/builder.jpg'
-import Collection from "../../component/Collection";
 import Fleet from "./Fleet";
-import Nav from "./about-nav/nav";
 import AboutUs_Header from "../../component/AboutUS/AboutUs_Header";
 import Feature from "../../component/AboutFeature/Feature";
+import Features from '../../component/Features/Features'
+import Exhibition from "../../component/Exhibition";
 const About = () => {
     const [show,setShow] = useState(true)
   return (
-    <main className="w-full">
-      <div className="">
-        <Nav/>
-      </div>
-     {/* <div className="w-full border-4  hidden md:block border-red-500 bg-red-500 about-shape ">
-         <img src={builder} alt='about-us' className='about-img mx-auto'/> 
-
-      </div> */}
+    <main className="w-full flex flex-col ">
+     
+    
         {/* <div className="abs hidden md:block   w-full">
           <div className="circle flex  justify-between gap-4 mx-auto w-full px-2 items-center">
             <div className="circle-icon move-up flex justify-center items-center border-2  border-red-500 ">
@@ -44,18 +37,23 @@ const About = () => {
         <div className="w-full">
           <AboutUs_Header/>
         </div>
-        <div className="w-full">
+        <div className="w-full exhibition-about">
+          <Exhibition/>
+        </div>
+        <div className="w-full feature-css">
           <Feature/>
         </div>
-        <div className="w-full hidden md:block">
+        <div className="w-full feat-css bg-black flex items-center border border-white">
+          <Features />
         </div>
+        
       
-      <Link  to= "/about/fleet" className='w-full'> 
+      {/* <Link  to= "/about/fleet" className='w-full'> 
       See Our Latest Fleet
       </Link>
       <Routes>
         <Route path="fleet" element={<Fleet/>} />
-      </Routes>
+      </Routes> */}
     </main>
   );
 };

@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom'
 import {FaArrowRight} from 'react-icons/fa'
 const Exhibition = () => {
   return (
-    <section className='w-full h-full py-5 md:p-5   text-black'>
+    <section className='w-full h-full flex flex-col justify-center py-5 md:p-5   text-black'>
         <div className="grid grid-cols-2">
-            <div className="exhibit-text h-full col-span-2 flex flex-col justify-center gap-4  md:col-span-1 pl-3">
+            <div className="exhibit-text h-full col-span-2    md:col-span-1 pl-3">
+                <div className="flex pl-2 flex-col justify-center gap-4">
                 <h1 className="text-2xl uppercase font-bold">
-                    Best rental price
+                    About us
                 </h1>
 
                 <p className="font-bold  w-10/12 ">
@@ -20,6 +21,7 @@ const Exhibition = () => {
                 <div className="exhibition-link flex gap-3 items-center font-bold ">
                 <Link to='/'> Rent a car    </Link>
                 <FaArrowRight className='exhibition-arrow' />
+                </div>
                 </div>
             </div>
 

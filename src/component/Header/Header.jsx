@@ -46,54 +46,44 @@ const textColor = 'black'
     return () => clearInterval(interval);
   }, []);
   return (
-    <header className="header w-full h-screen  md:h-auto md:bg-none h-screen  ">
-      <div className=" flex flex-col   w-full sub-header h-screen md:h-auto">
-        <div className="header-nav  w-full">
+    <header className="header-b w-full h-screen  h-screen relative ">
+      <div className=" flex flex-col   w-full sub-header md:backdrop-blur-sm h-full">
+        <div className="header-nav z-10  w-full">
           <Navbar bgColor={bgColor} textColor={textColor} />
         </div>
 
-        <div className="grid grid-cols-3 relative md:text-black md:h-4/5">
-          <div className="hidden md:block col-span-2  header-bg">
+        <div className="grid grid-cols-3 h-full relative md:text-black md:h-4/5">
+          <div className="hidden md:block col-span-2  ">
             <img src={car} className='car-logo' />
           </div>
 
-          <div className=" col-span-3 md:col-span-1 ">
-          <div className="header-text flex flex-col gap-4 justify-center items-center md:items-start h-60 md:h-full m-auto w-11/12  text-center text-white p-4  ">
-              <h1 className="text-5xl md:text-black head  md:hidden">
-                Welcome to{" "}
-                <span className="text-red-500  text-5xl">AutoZone</span>
-              </h1>
+          <div className=" col-span-3 md:col-span-1 header-carousel ">
+          <div className="header-text flex flex-col gap-4 justify-center items-center md:items-start h-full md:h-full m-auto w-11/12  text-center text-white p-4  ">
+             
               <h1
               data-aos="zoom-in"
               data-aos-delay="7000"
               data-aos-duration="9000"
-              className="text-5xl md:text-black head hidden md:block w-4/5 text-start head-carousel">
+              className="text-5xl md:text-black head  w-4/5 text-start head-carousel">
                  {value_lg[state]}
                 
               </h1>
 
-              <h3
-                className="text-3xl m-4 md:hidden  font-bold md:text-black capitalize value"
-                data-aos="zoom-in"
-                data-aos-delay="7000"
-                data-aos-duration="9000"
-              >
-                {value[state]}
-              </h3>
+              
             </div>
           </div>
 
-          <div className="col-span-3 w-full     px-6  h-20">
+          <div className="col-span-3 w-full  absolute bottom-0 x-10   px-6  h-20">
                 <div className="flex justify-between items-center gap-6 py-3">
-                <SiAudi size={40} className='text-black ' />
-                <SiNissan size={40} className='text-black ' />
-                <SiToyota size={40} className='text-black ' />
-                <SiChevrolet size={40} className='text-black ' />
-                <SiFord size={40} className='text-black ' />
-                <SiTesla size={40} className='text-black ' />
-                <SiFerrari size={40} className='text-black ' />
-                <SiLamborghini size={40} className='text-black ' />
-                <SiMclaren size={40} className='text-black ' />
+                <SiAudi size={40} className='text-gray-200 ' />
+                <SiNissan size={40} className='text-gray-200 ' />
+                <SiToyota size={40} className='text-gray-200 ' />
+                <SiChevrolet size={40} className='text-gray-200 ' />
+                <SiFord size={40} className='text-gray-200  ' />
+                <SiTesla size={40} className='text-gray-200 md:text-black' />
+                <SiFerrari size={40} className='text-gray-200 md:text-black' />
+                <SiLamborghini size={40} className='text-gray-200 md:text-black' />
+                <SiMclaren size={40} className='text-gray-200 md:text-black' />
                 </div>
             </div>
         </div>

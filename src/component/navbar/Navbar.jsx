@@ -34,7 +34,7 @@ const toggle = () =>{
        <Link to='/'> <h2 className='text-4xl text-red-500'> AutoZone`</h2></Link>
       </div>
 
-        <div style={{color:textColor}} className="hidden md:flex overflow-hidden space-x-12   ">
+        <div style={{color:textColor}} className="hidden md:flex overflow-hidden text-xl space-x-12   ">
           <Link className='hover:border-2 hover:border-red-500/70 hover:rounded-md p-3 font-extrabold' to='/'> Home</Link>
           <Link className='hover:border-2 hover:border-red-500/70 hover:rounded-md p-3 font-extrabold' to='/about'> About</Link>
           <Link className='hover:border-2 hover:border-red-500/70 hover:rounded-md p-3 font-extrabold' to='/boundary'> Test</Link>

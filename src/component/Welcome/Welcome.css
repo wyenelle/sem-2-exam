@@ -1,3 +1,16 @@
+.welcome{
+    height: auto;
+}
+.welcome-button{
+    border: 1px solid black;
+    transition: all .5s ease;
+}
+.welcome-button:hover{
+    border: 1px solid red;
+    background-color: inherit;
+    color: white;
+}
+
 .welcome-arrow{
     animation: welcome 3s infinite;
 }

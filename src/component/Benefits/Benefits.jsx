@@ -7,12 +7,12 @@ const Benefits = () => {
     
   return (
     <section className='w-full benefit  '>
-        <div className="bg-black/70 flex py-6 flex-col justify-center px-4">
+        <div className="bg-black/70 h-full flex py-6 flex-col justify-center px-4">
             <div className="text-center py-3">
-                <h2 className='text-2xl text-white font-extrabold my-2 '>
+                <h2 className='text-2xl text-white font-extrabold my-5 '>
                     Why Choose Us
                 </h2>
-                <p className="text-blue-500 font-bold text-white">
+                <p className=" font-bold text-white/90">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, nostrum?
                 </p>
             </div>
@@ -25,8 +25,8 @@ const Benefits = () => {
                     <FaCheckDouble size={40} className='text-blue-500'/>
                     </div>
                     <div className="pl-5 ">
-                        <h3 className='font-bold'>{obj.title} </h3>
-                        <p className="font-light">
+                        <h2 className='text-xl my-2 font-extrabold'>{obj.title} </h2>
+                        <p className="font-normal">
                         {obj.details}
                         </p>
                     </div>
