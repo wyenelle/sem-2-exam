@@ -1,0 +1,10 @@
+.header{
+    background: url('../../assets/cars/autozone-bg-1.jpeg');
+    background-size: 100% 100%;
+}
+.sub-header{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.header-nav{
+    margin-top: 5rem;
+}

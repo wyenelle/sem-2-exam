@@ -1,0 +1,18 @@
+.exhibition-img{
+    background: url('../assets/cars/multiple-car.png');
+    background-size: 100% 100%;
+}
+.exhibition-arrow{
+    animation: move-right 3s infinite;
+}
+@keyframes move-right{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(4px);
+    }
+    1000%{
+        transform: translateX(0);
+    }
+}

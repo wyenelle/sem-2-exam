@@ -1,13 +1,19 @@
 import React from 'react'
-
+import './Footer.css'
 const Footer = () => {
   return (
-    <section className=' '>
-        <div className="footer-list flex flex-col align-items-center bg-orange-400 text-black text-center p-4 mb-0">
-            Copyright #nbsp 2022
-            <h2 className='my-3'>AltSchool Africa</h2>
+    <footer className='footer bg-black '>
+        <div className="footer-bg  h-full">
+            <div className="footer-text bg-black/70 h-full text-white flex flex-col justify-center items-center gap-4 ">
+                <h1 className="footer-header text-center capitalize text-4xl font-extrabold w-7/12 mx-auto">
+                    we've got you covered here at <span className='text-red-500 text-4xl font-extrabold'>AutoZone</span>. your satisfaction means a lot to us 
+                </h1>
+                <div className="capitalize mt-4 bg-red-500 border border-red-500 p-3 rounded-md text-white font-bold">
+                    try us now
+                </div>
+            </div>
         </div>
-    </section>
+    </footer>
   )
 }
 

@@ -19,13 +19,13 @@ const toggle = () =>{
   link_2.addEventListener('click',toggle)
   link_3.addEventListener('click',toggle)
   link_4.addEventListener('click',toggle)
-
+  
   btn.addEventListener('click', toggle)
  })
   
 
   return (
-    <nav className=" relative container">
+    <nav className=" relative    w-full">
       <div className="flex items-center justify-between p-5">
 
       <div className="pt-2">
@@ -39,7 +39,7 @@ const toggle = () =>{
           <Link className='hover:text-orange-300' to='/repo'> Repo</Link>
         </div>
 
-      <button id="menu-btn" className="block  hamburger md:hidden focus:outline-none">
+      <button id="menu-btn" className="block  hamburger md:hidden   focus:outline-none">
         <span className="hamburger-top"></span>
         <span className="hamburger-middle"></span>
         <span className="hamburger-bottom"></span>
@@ -47,7 +47,7 @@ const toggle = () =>{
       </div>
 
       <div className="md:hidden">
-        <div id="menu" className="absolute   flex-col items-center self-end  py-8 hidden mt-10 space-y-6 font-bold sm:w-auto sm:self-center left-6 right-6 text-white   drop-shadow-md">
+        <div id="menu" className="absolute top-5 bg-black  flex-col items-center self-end  py-8 hidden mt-10 space-y-6 font-bold sm:w-auto sm:self-center left-6 right-6 text-white   drop-shadow-md">
         <Link className='hover:text-orange-300 ' id='link1' to='/'> Home</Link>
           <Link className='hover:text-orange-300 ' id='link2' to='/about'> About</Link>
           <Link className='hover:text-orange-300 ' id='link3' to='/boundary'> Test</Link>
@@ -55,7 +55,7 @@ const toggle = () =>{
 
         </div>
       </div>
-    </nav>
+    </nav>  
   )
 }
 

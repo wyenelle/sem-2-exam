@@ -3,7 +3,7 @@ import { useState,useEffect } from 'react'
 import './App.css'
 import {Routes,Route} from 'react-router-dom'
 import Repo from './component/repo/Repo'
-import Home from './component/Home/Home'
+import Home from './pages/Home/Home'
 import Navbar from './component/navbar/Navbar'
 import NotFound from './component/NotFound/NotFound'
 import SubInfo from './component/info/SubInfo'
@@ -28,8 +28,9 @@ function App() {
   return (
 
     <div className="App">
-      
-      <Navbar />
+
+      <div className="w-full">
+        </div>     
       <myContext.Provider value={{repo,isLoding}}>
         <Routes>
           <Route path='/' element={<Home />} />
