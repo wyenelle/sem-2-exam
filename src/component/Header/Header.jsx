@@ -51,8 +51,8 @@ const textColor = 'black'
         </div>
 
         <div className="grid grid-cols-3 h-full relative md:text-black md:h-4/5">
-          <div className="hidden md:block col-span-2  ">
-            <img src={car} className='car-logo' />
+          <div className="hidden md:block col-span-2  " data-aos='fade-right' data-aos-offset='400' data-aos-easing='ease-in-sine'>
+            <img src={car} className='car-logo'  />
           </div>
 
           <div className=" col-span-3 md:col-span-1 header-carousel ">

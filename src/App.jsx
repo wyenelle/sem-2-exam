@@ -24,7 +24,7 @@ function App() {
 },[])
 
 // data aos animate once 
-
+// adding accessibility to the project
 return (
 
     <div className="App">

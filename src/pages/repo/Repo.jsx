@@ -8,6 +8,8 @@ import Loading from './Loading'
 import {Link} from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import RepoProfile from './RepoProfile'
+import Navbar from '../../component/navbar/Navbar'
+import img from '../../assets/about/github.png'
 const Repo = () => {
     const {repo,isLoding} = useContext(myContext)
     console.log(repo);
@@ -36,6 +38,7 @@ const Repo = () => {
         <meta name='description' content=' Github repository for wyenelle'  />
         <link rel='canonical' href='/repo' />
       </Helmet>
+
 
       <div className="repo grid grid-cols-4  ">
         

@@ -1,20 +1,15 @@
 .info{
     display: flex;
     flex-direction: column;
-    border-left: 5px solid orange;
     padding-left: 10px;
     height: auto;
     margin-bottom: 3em;
     border-radius: 9px;
     padding-bottom: 5px;
-    color: orange;
-    background:transparent;
 
 }
 @media screen and (min-width : 650px){
     .info{
-        border-left: 5px solid orange;
-        border-bottom: 0;
     }
 }
 .info div{
@@ -27,17 +22,11 @@
     text-decoration: none;
     margin-top: 1em;
     font-weight: 800;
-    border: 1px solid orange;
-    background-color:rgba(0, 0, 0, 0.7);
-    width: 120px;
-    color: white;
     padding: 8px;
     text-align: center;
     border-radius: 4px;
 }
 .info div .info-link:hover{
-    background: darkorange;
-    color: #eee;
 }
 @media screen and (min-width : 650px){
     .info{
