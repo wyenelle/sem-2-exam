@@ -31,7 +31,7 @@ const Pagination = ({
       </button>
 
       {nuumber_of_page.map((number) => (
-        <li className="list-link" onClick={() => paginate(number)}>
+        <li key={number} className="list-link" onClick={() => paginate(number)}>
           <a href="#" >
             {number}
           </a>

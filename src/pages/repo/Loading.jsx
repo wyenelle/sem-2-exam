@@ -7,7 +7,7 @@ const Loading = () => {
     <div className="loading w-full px-2 rounded-md shadow-md my-2 py-4">
         {
           arr.map(num => (
-            <div className="grid grid-cols-5 animate-pulse">
+            <div key={num} className="grid grid-cols-5 animate-pulse">
             <div className="w-full py-4 col-span-4  px-3">
          <div className="flex items-center">
          <h1 className="w-6/12 bg-gray-300 my-2 h-5"></h1>

@@ -10,8 +10,8 @@ import { Helmet } from 'react-helmet-async'
 import RepoProfile from './RepoProfile'
 import img from '../../assets/about/github.png'
 const Repo = () => {
-    const {repo,isLoding} = useContext(myContext)
-    console.log(repo);
+    const {repo} = useContext(myContext)
+    // console.log(repo)
 
 
     // creating pagination here
@@ -23,7 +23,7 @@ const Repo = () => {
     const index_of_last_post = currentPage * postPerPage
     const index_of_first_post = index_of_last_post - postPerPage
 
-    const current_post = repo.slice(index_of_first_post,index_of_last_post)
+    const current_post = repo.data.slice(index_of_first_post,index_of_last_post)
 
     
 
@@ -53,16 +53,18 @@ const Repo = () => {
             </div>
           </div>
         </div>
+        
         <div className="col-span-4 md:col-span-1">
           <RepoProfile/>
         </div>
+        
         <div className="col-span-4 md:hidden">
           <h1 className="font-extrabold text-xl text-gray-400 shadow-md  px-4 mt-5 "> Repositories</h1>
-<p className="h-1 bg-red-500 ml-4 w-2/12"></p>
+          <p className="h-1 bg-red-500 ml-4 w-2/12"></p>
         </div>
         <div className="repo-style w-full col-span-4 md:col-span-3 ">
-        {isLoding && repo.length <= 1 ? <Loading /> : (
-    current_post.map( obj =><ErrorBoundary><Info isLoding={isLoding} obj={obj} repo={repo} key={obj.id} /></ErrorBoundary> )
+        {repo.isLoading ? <Loading /> : (
+    current_post.map( (obj,idx) =><ErrorBoundary><Info isLoading={repo.isLoading}  obj={obj} repo={repo.data} key={idx} /></ErrorBoundary> )
 )}
         </div>
           <Link id='repo-home-button' to='/'> Home </Link>

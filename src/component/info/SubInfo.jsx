@@ -7,11 +7,12 @@ import AOS from 'aos'
 
 const SubInfo = () => {
   const {repo} = useContext(myContext)
+  // console.log(repo)
   const [topic,setTopic] = useState('')
   const [loading, setLoading] = useState(true)
   const [details,setDetails] = useState('')
 const {id} = useParams()
-const data = repo.find(obj => obj.id === parseInt(id))
+const data = repo.data.find(obj => obj.id === parseInt(id))
 const {owner: {html_url,avatar_url},visibility,language,topics,default_branch,created_at,clone_url,full_name,open_issues} = data
 let real_name = ''
 for(let i of full_name){
