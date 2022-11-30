@@ -1,0 +1,27 @@
+.repo{
+    background: url('girl.jpeg');
+    background-size: 100% 100%;
+    height: auto;
+    margin-bottom: 1em;
+}
+.repo-style{
+    background-color: rgba(0,0,0,0.5);
+    height: auto;
+    padding-bottom: 2em;   
+
+}
+#repo-home-button{
+    padding: 10px;
+    border: 1px solid orange;
+    color: orange;
+    border-radius: 8px;
+    width: 80px;
+    height: 30px;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width : 650px){
+    .repo-style{
+        padding-left: 0;
+    }
+}

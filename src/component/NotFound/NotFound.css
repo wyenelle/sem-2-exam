@@ -1,0 +1,38 @@
+.error-wrapper{
+    background: url('../Home/laptop.jpeg');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    color: white;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.error-404{
+    background: rgba(0,0,0,0.3);
+    width: 70%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    
+}
+.error-404 h1{
+    font-size: 24px;
+    font-weight: 900;
+}
+.err-home{
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.err-link{
+    text-decoration: none;
+}
