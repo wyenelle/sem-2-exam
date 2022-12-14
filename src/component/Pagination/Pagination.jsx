@@ -21,7 +21,7 @@ const Pagination = ({
  )
 
   return (
-    <div className="list-group">
+    <div className="list-group text-2xl font-extrabold">
       <button
         disabled={currentPage === 1 ? true : false}
         tabIndex="0"
@@ -31,7 +31,7 @@ const Pagination = ({
       </button>
 
       {nuumber_of_page.map((number) => (
-        <li key={number} className="list-link" onClick={() => paginate(number)}>
+        <li key={number} className="font-extrabold text-2xl" onClick={() => paginate(number)}>
           <a href="#" >
             {number}
           </a>

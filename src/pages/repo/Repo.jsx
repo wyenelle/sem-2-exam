@@ -72,7 +72,7 @@ const Repo = () => {
       </div>
     <Pagination 
     postPerPage={postPerPage}
-    totalPost={repo.length}
+    totalPost={repo.data.length}
     currentPage={currentPage}
     setCurrentPage={setCurrentPage}
     paginate={paginate}

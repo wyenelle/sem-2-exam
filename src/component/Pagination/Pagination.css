@@ -2,19 +2,10 @@
     display : flex;
     list-style-type: none;
     justify-content: space-between;
-    background-color: black;
     height: 70px;
+    padding: 1em;
 }
-.list-link{
-    border: 1px solid orange;
-    width: 50px;
-    text-align: center;
-    padding: 7px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 7px;
-}
+
 .list-link a{
     color: orange;
 
