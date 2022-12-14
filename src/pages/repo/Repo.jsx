@@ -19,7 +19,7 @@ const Repo = () => {
     const postPerPage = 4
     
     const paginate = (pageNumber) => setCurrentPage(pageNumber)
-    // Pagination starts here
+
     const index_of_last_post = currentPage * postPerPage
     const index_of_first_post = index_of_last_post - postPerPage
 
@@ -70,6 +70,8 @@ const Repo = () => {
 
 
       </div>
+
+{/* PAGINATION */}
     <Pagination 
     postPerPage={postPerPage}
     totalPost={repo.data.length}

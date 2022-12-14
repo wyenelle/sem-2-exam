@@ -26,6 +26,7 @@ const Info = ({ obj, isLoading }) => {
 
           <div className="col-span-1 py-4  ">
             <div className="flex items-center text-start py-2 pr-2">
+              {/* SENDS A UNIQUE NUMBER AS A ROUTE PARAMETER */}
               <Link to={`/repo/${id}`} className="border rounded-lg px-2 py-1">Open</Link>
             </div>
           </div>

@@ -10,7 +10,7 @@ import axios from "axios";
 import ErrorBoundary from "./component/ErrorBoundary";
 import BoundaryTest from "./pages/BoundaryTest";
 import About from "./pages/About/About";
-
+// REDUCER FUNCTION
 const reducer = (repo, action) => {
   switch (action.type) {
     case "FETCH_DATA":
@@ -31,6 +31,7 @@ const initialState = {
 function App() {
   const [repo, dispatch] = useReducer(reducer, initialState);
   console.log(repo.data)
+
   useEffect(() => {
     axios
       .get("https://api.github.com/users/wyenelle/repos")
@@ -40,7 +41,8 @@ function App() {
      fire();
     console.log(repo.isLoading);
   }, []);
-
+  
+// FIRES A DISPATCH THAT CHANGES THE STATE
     const fire = ()=> dispatch({type:"loading",payload: false })
   // data aos animate once === data-aos-once ='true'
   // adding accessibility to the project

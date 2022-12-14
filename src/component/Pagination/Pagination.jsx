@@ -1,5 +1,7 @@
 import React from "react";
 import "./Pagination.css";
+
+
 const Pagination = ({
   paginate,
   setCurrentPage,
@@ -22,6 +24,7 @@ const Pagination = ({
 
   return (
     <div className="list-group text-2xl font-extrabold">
+{/* PREV BUTTON */}
       <button
         disabled={currentPage === 1 ? true : false}
         tabIndex="0"
@@ -29,7 +32,7 @@ const Pagination = ({
       >
         prev
       </button>
-
+{/* NUMBER BUTTON */}
       {nuumber_of_page.map((number) => (
         <li key={number} className="font-extrabold text-2xl" onClick={() => paginate(number)}>
           <a href="#" >
@@ -38,6 +41,7 @@ const Pagination = ({
         </li>
       ))}
 
+{/* NEXT BUTTON */}
       <button
         tabIndex="0"
         disabled={currentPage === nuumber_of_page.length ? true : false}
