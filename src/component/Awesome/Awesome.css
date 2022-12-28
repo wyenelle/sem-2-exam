@@ -1,0 +1,46 @@
+.round-number{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phone{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.number{
+    animation: bounce-up 3s infinite;
+}
+@keyframes bounce-up{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-8px);
+    }
+    
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+@keyframes bounce-down{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-8px);
+    }
+    
+    100%{
+        transform: translateY(0);
+    }
+    
+}

@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet-async'
 import Header from '../../component/Header/Header'
 import Features from '../../component/Features/Features'
 import Exhibition from '../../component/Exhibition'
+import Awesome from '../../component/Awesome/Awesome'
 const Home = () => {
 useEffect(()=>{
   AOS.init()
@@ -25,6 +26,7 @@ useEffect(()=>{
           <div className='h-60  my-2'>
             <Exhibition />
           </div>
+          <Awesome/>
       </div>
     </main>
   )
