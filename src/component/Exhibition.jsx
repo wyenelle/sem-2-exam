@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import {FaArrowRight} from 'react-icons/fa'
 const Exhibition = () => {
   return (
-    <section className='w-full h-full py-5 md:p-5 my-8 bg-red-500 md:bg-white text-white md:text-black'>
+    <section className='w-full h-full py-5 md:p-5   text-black'>
         <div className="grid grid-cols-2">
             <div className="exhibit-text h-full col-span-2 flex flex-col justify-center gap-4  md:col-span-1 pl-3">
                 <h1 className="text-2xl uppercase font-bold">

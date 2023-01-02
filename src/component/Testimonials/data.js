@@ -6,12 +6,12 @@ export const data = [
     },
     {
         id: 2,
-        desc: 'Bought all my cars from AutoZone. I dont think i ever had any issues with them \n i love them  ',
+        desc: 'Them use AutoZone collect my babe back then, Todayyy, I have used the same AutoZone to carry out my revenge mission.  ',
         name: 'anon'
     },
     {
         id: 3,
-        desc: 'I like the Cars i hire. Used the cars all through my time in Nigeria and would continue to ',
+        desc: 'My guy once said and i quote "if you want to get those chicks, try AutoZone cars  "',
         name: 'Shanga Shun'
     },
 ]

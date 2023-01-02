@@ -9,7 +9,11 @@ import Exhibition from '../../component/Exhibition'
 import Awesome from '../../component/Awesome/Awesome'
 import Testimonial from '../../component/Testimonials/Testimonial'
 import Benefits from '../../component/Benefits/Benefits'
+import Footer from '../../component/Footer/Footer'
+import Welcome from '../../component/Welcome/Welcome'
 const Home = () => {
+  const sum = <span className='text-red-500'>AutoZone</span>
+  const text = `At ${sum} ,your satisfaction matters a lot`
 useEffect(()=>{
   AOS.init()
 })
@@ -24,6 +28,7 @@ useEffect(()=>{
 </Helmet>
       <div className="w-full">
         <Header />
+        <Welcome/>
         <Features/>
           <Awesome/>
       </div>
@@ -34,6 +39,8 @@ useEffect(()=>{
           <div className='h-60  my-2'>
             <Exhibition />
           </div>
+          <Footer text={text} />
+
     </main>
   )
 }

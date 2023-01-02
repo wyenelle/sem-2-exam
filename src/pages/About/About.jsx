@@ -4,12 +4,17 @@ import { Link, Route, Routes } from "react-router-dom";
 import {FaRocket,FaCar,FaHandPointUp,FaDesktop} from 'react-icons/fa'
 import "./About.css";
 import builder from '../../assets/about/builder.jpg'
+import Collection from "../../component/Collection";
+import Fleet from "./Fleet";
+import Nav from "./about-nav/nav";
 const About = () => {
     const [show,setShow] = useState(true)
   return (
     <main className="w-full">
-<h2>More on AutoZone</h2>
-      <div className="w-full border-4 hidden md:block border-red-500 bg-red-500 about-shape ">
+      <div className="">
+        <Nav/>
+      </div>
+     <div className="w-full border-4  hidden md:block border-red-500 bg-red-500 about-shape ">
         <img src={builder} alt='about-us' className='about-img mx-auto'/>
 
       </div>
@@ -32,11 +37,17 @@ const About = () => {
             </div>
           </div>
         </div>
-{/*       
-      <Link onClick={()=> setShow(!show)} to= "/about/about-info" className='w-full'> { 'See Hobbies and Interest'}</Link>
+
+        <div className="w-full">
+          <Collection />
+        </div>
+      
+      <Link  to= "/about/fleet" className='w-full'> 
+      See Our Latest Fleet
+      </Link>
       <Routes>
-        <Route path="about-info" element={<Home/>} />
-      </Routes> */}
+        <Route path="fleet" element={<Fleet/>} />
+      </Routes>
     </main>
   );
 };

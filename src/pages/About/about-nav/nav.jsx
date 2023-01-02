@@ -1,9 +1,9 @@
 import React from 'react'
-import './Navbar.css'
+import './nav.css'
 import {Link} from 'react-router-dom'
-import logo from '../../assets/about/at.png'
+import logo from '../../../assets/about/at.png'
 import { useEffect } from 'react'
-const Navbar = () => {
+const Nav = () => {
  useEffect(()=>{
   const btn = document.querySelector('#menu-btn')
   const nav = document.querySelector('#menu')
@@ -26,19 +26,19 @@ const toggle = () =>{
   
 
   return (
-    <nav className=" relative h-10    w-full">
-      <div className="flex items-center justify-between p-5">
+    <nav className=" relative h-20 py-3 bg-black flex items-center justify-center  w-full">
+      <div className="flex items-center w-full justify-between p-5">
 
       <div className="pt-2 relative flex flex-col ">
         <img src={logo} alt='logo' className='absolute -top-7' />
        <Link to='/'> <h2 className='text-4xl text-red-500'> AutoZone`</h2></Link>
       </div>
 
-        <div className="hidden md:flex overflow-hidden space-x-12 text-white  ">
-          <Link className='hover:border-2 hover:border-red-500/70 hover:rounded-md p-3 font-extrabold' to='/'> Home</Link>
-          <Link className='hover:border-2 hover:border-red-500/70 hover:rounded-md p-3 font-extrabold' to='/about'> About</Link>
-          <Link className='hover:border-2 hover:border-red-500/70 hover:rounded-md p-3 font-extrabold' to='/boundary'> Test</Link>
-          <Link className='hover:border-2 hover:border-red-500/70 hover:rounded-md p-3 font-extrabold' to='/repo'> Repo</Link>
+        <div className="hidden text-white   text-center md:flex overflow-hidden justify-center space-x-12 text-white  ">
+          <Link className=' p-3 font-extrabold' to='/'> Home</Link>
+          <Link className=' p-3 font-extrabold' to='/about'> About</Link>
+          <Link className=' p-3 font-extrabold' to='/boundary'> Test</Link>
+          <Link className=' p-3 font-extrabold' to='/repo'> Repo</Link>
         </div>
 
         <div className=" hidden md:block bg-red-500 text-white font-extrabold p-3">
@@ -67,4 +67,4 @@ const toggle = () =>{
   )
 }
 
-export default Navbar
+export default Nav

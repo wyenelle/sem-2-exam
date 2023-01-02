@@ -2,9 +2,8 @@ import myContext from './component/context'
 import { useState,useEffect } from 'react'
 import './App.css'
 import {Routes,Route} from 'react-router-dom'
-import Repo from './component/repo/Repo'
+import Repo from './pages/repo/Repo'
 import Home from './pages/Home/Home'
-import Navbar from './component/navbar/Navbar'
 import NotFound from './component/NotFound/NotFound'
 import SubInfo from './component/info/SubInfo'
 import axios from 'axios'
@@ -45,7 +44,6 @@ function App() {
           <Route path='/repo/:id' element={<SubInfo />} />
 
         </Routes>
-        <Footer />
         </myContext.Provider>
           </div>
   )

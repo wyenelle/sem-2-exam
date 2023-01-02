@@ -3,7 +3,7 @@ import './Card.css'
 const Card = ({card}) => {
   
   return (
-  <div className=" feature-card col-span-1 mb-5 w-11/12 shadow-md  md:border md:shadow-md m-auto hover:shadow-lg ">
+  <div className=" feature-card col-span-1 mb-5 w-11/12 shadow-md   md:shadow-md m-auto hover:shadow-lg ">
       <div  id={card.id == 1 ? 'style-1' : card.id == 2 ? 'style-2' : card.id == 3 ?  "style-3" : ''}
     className=' border  text-center    w-full m-auto '>
        <div className="w-full p-5 flex flex-col justify-center bg-black/70 h-full">

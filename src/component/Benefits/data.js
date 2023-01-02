@@ -17,6 +17,6 @@ export const data = [
     {
         id: 4,
         title: 'Award winning car rental company',
-        details: 'There is definitely no reasont to steal a car when rentals at AutoZone is way cheaper and better than the rest'
+        details: 'There is definitely no reasont to steal a car when rentals at AutoZone is way cheaper than a gun'
     }
 ]

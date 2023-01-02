@@ -1,0 +1,14 @@
+.welcome-arrow{
+    animation: welcome 3s infinite;
+}
+@keyframes welcome{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(4px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
