@@ -17,7 +17,7 @@ const Awesome = () => {
                             <div className="round-number border-4 border-gray-200 mx-auto  text-white font-extrabold text-2xl p-2 mt-5">
                                 500+
                             </div>
-                            <p className='font-bold text-white my-3 text-center'> Active number of customers and counting.</p>
+                            <p className='font-bold text-white my-3 text-center px-3'> Active number of customers and counting.</p>
                         </div>
                         <div className="row-span-1 call  shadow-lg  m-auto h-full">
                             <div className="grid grid-cols-3 py-2">

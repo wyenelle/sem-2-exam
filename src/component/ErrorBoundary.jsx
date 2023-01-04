@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
+import movingCar from '../assets/cars/moving-car.png'
+import './ErrorBoundary.css'
 class ErrorBoundary extends Component {
   constructor(props) {
     super(props);
@@ -29,13 +30,15 @@ class ErrorBoundary extends Component {
 
     if (this.state.hasError) {
       return (
-        <div style={style}>
-          <h1>Sum's Happened Here</h1>
+        <div style={style} className='h-screen mx-auto w-full border-4 border-red-500'>
+          <div className="my-6 border-4 pt-6 border-black w-4/5 h-3/5 mx-auto">
+          <Link className=" " to="/">
+          <h1>Sum's just Happened Here</h1>
           <h2>This page is devoted to test our error boundary</h2>
-          <p>stop the car below to go back home </p>
-          <Link className="p-3 bg-orange-300 my-2  text-black" to="/">
-            Stop
+          <p className="capitalize mt-4">Touch anywhere on the screen  to go back home </p>
           </Link>
+          </div>
+           
         </div>
       );
     }

@@ -1,9 +1,9 @@
 import car1 from "../../assets/cars/car-png-1.png";
 import car2 from "../../assets/cars/car-footer.png";
-import car3 from "../../assets/cars/car3.jpeg";
-import car4 from "../../assets/cars/car4.jpeg";
-import car5 from "../../assets/cars/car5.jpeg";
-import car6 from "../../assets/cars/car6.jpeg";
+import car3 from "../../assets/cars/car3.png";
+import car4 from "../../assets/cars/car4.png";
+import car5 from "../../assets/cars/car5.png";
+import car6 from "../../assets/cars/car6.png";
 
 export const data = [
     {

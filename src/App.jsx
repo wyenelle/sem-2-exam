@@ -8,7 +8,7 @@ import NotFound from './component/NotFound/NotFound'
 import SubInfo from './component/info/SubInfo'
 import axios from 'axios'
 import ErrorBoundary from './component/ErrorBoundary'
-import BoundaryTest from './component/BoundaryTest'
+import BoundaryTest from './pages/BoundaryTest'
 import About from './pages/About/About'
 import Footer from './component/Footer/Footer'
 
@@ -33,7 +33,7 @@ function App() {
       <myContext.Provider value={{repo,isLoding}}>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/repo/*' element={<Repo />} />
+          <Route path='/repo' element={<Repo />} />
           <Route path='/about/*' element={<About />} />
 
           <Route path='*' element={<NotFound />} />
