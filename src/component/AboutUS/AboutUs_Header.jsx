@@ -12,18 +12,19 @@ import {
     SiMclaren,
   } from "react-icons/si";
   import { CgBmw } from "react-icons/cg";
-import smilingCar from '../../assets/cars/smiling-car.png'
+import smilingCar from '../../assets/about/joey.png'
 
 
 const AboutUs_Header = () => {
 const styles = {
-    height: '80%',
+    height: '100%',
     width: '100%',
+    border: '1px solid black'
 }
 
     return (
-    <section className='pl-4 h-screen'>
-        <div className="grid grid-cols-3 h-full">
+    <section className='pl-4 h-screen about-head'>
+        <div className="grid grid-cols-3 h-full backdrop-blur-sm">
             <div className="col-span-3 md:col-span-1">
                 
                     <div className='h-full flex flex-col justify-center items-center  w-full'>
