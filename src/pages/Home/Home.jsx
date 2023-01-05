@@ -11,6 +11,7 @@ import Testimonial from '../../component/Testimonials/Testimonial'
 import Benefits from '../../component/Benefits/Benefits'
 import Footer from '../../component/Footer/Footer'
 import Welcome from '../../component/Welcome/Welcome'
+import AppSection from '../../component/AppSection'
 const Home = () => {
   const sum = <span className='text-red-500'>AutoZone</span>
   const text = `At ${sum} ,your satisfaction matters a lot`
@@ -29,15 +30,14 @@ useEffect(()=>{
       <div className="w-full">
         <Header />
         <Welcome/>
-        <Features/>
           <Awesome/>
       </div>
       <div>
-        <Testimonial />
         <Benefits/>
+        <Testimonial />
       </div>
-          <div className='h-60  my-2'>
-            <Exhibition />
+          <div className='md:h-screen h-80 my-2'>
+            <AppSection />
           </div>
           <Footer text={text} />
 

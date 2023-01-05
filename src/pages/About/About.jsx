@@ -7,6 +7,8 @@ import builder from '../../assets/about/builder.jpg'
 import Collection from "../../component/Collection";
 import Fleet from "./Fleet";
 import Nav from "./about-nav/nav";
+import AboutUs_Header from "../../component/AboutUS/AboutUs_Header";
+import Feature from "../../component/AboutFeature/Feature";
 const About = () => {
     const [show,setShow] = useState(true)
   return (
@@ -14,11 +16,11 @@ const About = () => {
       <div className="">
         <Nav/>
       </div>
-     <div className="w-full border-4  hidden md:block border-red-500 bg-red-500 about-shape ">
-        <img src={builder} alt='about-us' className='about-img mx-auto'/>
+     {/* <div className="w-full border-4  hidden md:block border-red-500 bg-red-500 about-shape ">
+         <img src={builder} alt='about-us' className='about-img mx-auto'/> 
 
-      </div>
-        <div className="abs hidden md:block   w-full">
+      </div> */}
+        {/* <div className="abs hidden md:block   w-full">
           <div className="circle flex  justify-between gap-4 mx-auto w-full px-2 items-center">
             <div className="circle-icon move-up flex justify-center items-center border-2  border-red-500 ">
             <FaRocket size={70} className='rocket' />
@@ -36,10 +38,16 @@ const About = () => {
               <FaHandPointUp size={70} />
             </div>
           </div>
-        </div>
+        </div> */}
+
 
         <div className="w-full">
-          <Collection />
+          <AboutUs_Header/>
+        </div>
+        <div className="w-full">
+          <Feature/>
+        </div>
+        <div className="w-full hidden md:block">
         </div>
       
       <Link  to= "/about/fleet" className='w-full'> 

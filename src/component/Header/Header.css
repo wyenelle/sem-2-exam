@@ -1,3 +1,6 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,900&display=swap');
+
 .header{
     background: url('../../assets/unsplash/fortune-vieyra-o4yi2U-qcf0-unsplash.jpg');
     background-size: 100% 100%;
@@ -5,9 +8,54 @@
 .sub-header{
     background-color: rgba(0, 0, 0, 0.5);
 }
+@media screen and (min-width: 600px){
+.sub-header{
+    background: url('../../assets/cars/white-bg.jpeg');
+    background-size: 100% 100%;
+}
+.header{
+    
+}
+}
 .header-nav{
     margin-top: 5rem;
 }
+.header-bg{
+
+}
+.car-logo{
+width: 90%;
+height: 90%;
+margin-top: 4rem;
+}
 .slide-in{
     animation: slide-in 6s infinite;
+}
+.head{
+    font-family: 'Alegreya', serif;
+    font-weight: 900;
+    font-size: x-large;
+}
+.head-carousel{
+    animation: header-fade 10s infinite;
+}
+@keyframes header-fade{
+    0%{
+opacity: 0;
+    }
+    10%{
+opacity: 0;
+    }
+    25%{
+opacity: 1;
+    }
+50%{
+    opacity: 1;
+}
+75%{
+    opacity: 1;
+}
+100%{
+    opacity: 0.8;
+}
 }

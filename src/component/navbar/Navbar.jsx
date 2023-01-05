@@ -3,7 +3,7 @@ import './Navbar.css'
 import {Link} from 'react-router-dom'
 import logo from '../../assets/about/at.png'
 import { useEffect } from 'react'
-const Navbar = () => {
+const Navbar = ({bgColor,textColor}) => {
  useEffect(()=>{
   const btn = document.querySelector('#menu-btn')
   const nav = document.querySelector('#menu')
@@ -34,7 +34,7 @@ const toggle = () =>{
        <Link to='/'> <h2 className='text-4xl text-red-500'> AutoZone`</h2></Link>
       </div>
 
-        <div className="hidden md:flex overflow-hidden space-x-12 text-white  ">
+        <div style={{color:textColor}} className="hidden md:flex overflow-hidden space-x-12   ">
           <Link className='hover:border-2 hover:border-red-500/70 hover:rounded-md p-3 font-extrabold' to='/'> Home</Link>
           <Link className='hover:border-2 hover:border-red-500/70 hover:rounded-md p-3 font-extrabold' to='/about'> About</Link>
           <Link className='hover:border-2 hover:border-red-500/70 hover:rounded-md p-3 font-extrabold' to='/boundary'> Test</Link>

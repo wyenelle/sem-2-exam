@@ -22,7 +22,9 @@ function App() {
     .then(response => setRepo(response?.data))
   typeof repo === Object &&  setIsLoading(false)
 },[])
-
+// mobile app phones 
+// route map grey png
+// remove.bg for somw cars
 
   return (
 
