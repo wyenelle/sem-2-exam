@@ -1,0 +1,39 @@
+#style-1{
+    background: url('../assets/cars/download-1.jpeg');
+    background-size: 100% 100%;
+    transform: translate(0);
+    transition: all .5s ease-in;
+}
+#style-2{
+    background: url('../assets/cars/download-2.jpeg');
+    background-size: 100% 100%;
+    transform: translate(0);
+    transition: all .5s ease-in;
+}
+#style-3{
+    background: url('../assets/cars/download-3.jpeg');
+    background-size: 100% 100%;
+    transform: translate(0);
+    transition: all .5s ease-in;
+}
+.feature-card{
+    transform: translateY(0);
+    transition: all .5s ease-in;
+}
+.feature-card:hover{
+    transform: translateY(-10px);
+}
+@media screen and (min-width: 600px){
+    #style-1:hover{
+        transform: translateY(-10px) translateX(-4px);
+
+    }
+    #style-2:hover{
+        transform: translateY(-10px) ;
+
+    }
+    #style-3:hover{
+        transform: translateY(-10px) translateX(4px);
+
+    }
+}

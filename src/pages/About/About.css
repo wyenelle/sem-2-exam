@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,900&display=swap');
+/* .about-shape{
+    position: relative;
+    height: 1000px;
+    clip-path: polygon(0 0, 100% 0, 100% 66%, 0 100%);
+} */
+h1{
+    font-family: 'Alegreya', serif;
+}
+.circle-icon{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: white;
+    /*  */
+}
+.exhibition-about{
+    /* height: 70vh; */
+}
+.feature-css{
+    /* height: 265vh; */
+}
+.feat-css{
+    /* height:50vh; */
+    margin-top: 5em;
+}
+@media screen and (min-width: 600px){
+    .feature-css{
+        /* height: 70vh; */
+    }
+}
+.abs{
+    position: absolute;
+    top: 700px;
+}
+.car{
+    animation: zoom 5s infinite;
+}
+.car-holder{
+    animation: bounce 5s infinite;
+}
+.move-up{
+    animation: bounce 3s infinite;
+}
+.rocket{
+    animation: fly 2s infinite;
+}
+.fade{
+    animation: fade 10s infinite;
+}
+@keyframes fade{
+    0%{
+        opacity: 0.3;
+    }
+    25%{
+        opacity: 1;
+        transform: scale3d(1.1);
+    }
+    50%{
+        opacity: 1;
+        transform: scale3d(1.1);
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes fly{
+    0%{
+        transform: translateZ(0);
+    }
+    50%{
+        transform: translateY(-5px) translateX(5px) ;
+    }
+    100%{
+        transform: translateZ(0);
+    }
+}
+@keyframes bounce{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+         transform: translateY(-8px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes zoom {
+    0%{
+        transform: scale(0.9);
+    }
+    25%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}

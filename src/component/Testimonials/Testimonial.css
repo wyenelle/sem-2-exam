@@ -1,0 +1,61 @@
+.attachment{
+    background: url('../../assets/unsplash/campbell-3ZUsNJhi_Ik-unsplash.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 80vh;
+}
+.arrow-right{
+    animation: move-right 4s infinite
+}
+.arrow-left{
+    animation: move-left 4s infinite
+}
+.slide-left{
+    animation: slide-in 15s infinite;
+}
+@keyframes slide-in{
+    0%{
+        transform: translateX(80px);
+        opacity: 0;
+    }
+    25%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    50%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    75%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes move-right{
+    0%{
+        transform: translateX(0);
+    }
+
+    50%{
+        transform: translateX(6px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes move-left{
+    0%{
+        transform: translateX(0);
+    }
+
+    50%{
+        transform: translateX(-6px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

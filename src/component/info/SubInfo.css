@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.info-wrapper{
+
+    background:url('../repo/girl.jpeg')  ;
+    background-size:100% 100%;
+    color: white;
+}
+.subinfo{
+    height: auto;
+    margin: auto;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.subinfo-img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+
+.subinfo-header{
+    text-align: center;
+    margin: auto;
+}
+.subinfo-header p{
+    color: lightsalmon;
+    font-weight: bolder;
+}
+.subinfo-data h2{
+    text-align: center;
+    margin-bottom: 1em;
+}
+span{
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+}
+.subinfo-details{
+    display: grid;
+    text-align: center;
+    color: orange;
+    text-transform: capitalize;
+}
+.subinfo-btn{
+    padding: 10px;
+    color: #eee;
+    text-align: center;
+    background-color:  orange;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.open-issue{
+    text-align: center;
+    margin-bottom: 2rem;
+}
