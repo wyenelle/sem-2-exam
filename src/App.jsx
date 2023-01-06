@@ -25,6 +25,7 @@ function App() {
 
 // data aos animate once 
 // adding accessibility to the project
+// link to error boundary for test page
 return (
 
     <div className="App">

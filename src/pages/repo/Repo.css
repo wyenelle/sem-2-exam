@@ -7,6 +7,10 @@
     height: auto;
     margin-bottom: 1em;
 }
+.github-img{
+height: 40px;
+width: 40px;
+}
 .repo-style{
 background-color: white;
 

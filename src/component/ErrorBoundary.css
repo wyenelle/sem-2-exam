@@ -1,5 +1,6 @@
-.car{
-    animation: runner 3s infinite;
+.err{
+    background: url('../assets/cars/white-bg.jpeg');
+    background-size: 100% 100%;
 }
 @keyframes run {
     0%{

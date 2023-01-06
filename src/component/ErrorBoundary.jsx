@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import movingCar from '../assets/cars/moving-car.png'
 import './ErrorBoundary.css'
 class ErrorBoundary extends Component {
   constructor(props) {
@@ -18,25 +17,17 @@ class ErrorBoundary extends Component {
   }
 
   render() {
-    const style = {
-      width: "80%",
-      height: "70vh",
-      textAlign: "center",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-    };
 
     if (this.state.hasError) {
       return (
-        <div style={style} className='h-screen mx-auto w-full border-4 border-red-500'>
-          <div className="my-6 border-4 pt-6 border-black w-4/5 h-3/5 mx-auto">
-          <Link className=" " to="/">
-          <h1>Sum's just Happened Here</h1>
-          <h2>This page is devoted to test our error boundary</h2>
-          <p className="capitalize mt-4">Touch anywhere on the screen  to go back home </p>
-          </Link>
+        <div  className='h-screen err flex flex-col justify-center  w-full mx-auto '>
+          <div className="  pt-6 backdrop-blur-md w-full h-80 pl-5">
+          <h1 className="text-start my-3 font-extrabold text-4xl">Error boundary page</h1>
+          <h2 className="text-start my-1 font-bold"> This page is devoted to test our error boundary</h2>
+          <p className="text-start my-1 md:w-5/12 w-10/12"> Error boundaries are important in react to help shield the app from displaying error messages due to error at any time to users. It provides a better way to let the user know about inefficiencies in your app. You can read more about Error boundaries <a href="#"> <b>here</b></a> </p>
+          <div className="flex">
+          <Link to='/' className="font-extrabold text-start mt-3  text-xl">Home</Link>
+          </div>
           </div>
            
         </div>

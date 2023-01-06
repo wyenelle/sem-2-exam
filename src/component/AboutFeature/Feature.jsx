@@ -9,7 +9,7 @@ const Feature = () => {
 const icons = [<FaSearch size={40}/>,<FaHandPointDown size={40}/>,<FaList size={40}/>,<FaCheck size={49}/>, <FaCarSide size={40}/>,]
 
   return (
-    <section className='w-full   px-5'>
+    <section className='w-full   px-5' data-aos='zoom-in' data-aos-delay='600'>
       <h1 className='text-4xl mt-2 mb-2  mx-auto w-full py-2 text-center text-gray-500'> 
       <FaLockOpen size={60} color='gray' className='mx-auto mb-3 hover:shadow-lg shadow-md'/>
       We Offer...
