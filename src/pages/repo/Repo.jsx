@@ -8,7 +8,6 @@ import Loading from './Loading'
 import {Link} from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import RepoProfile from './RepoProfile'
-
 const Repo = () => {
     const {repo,isLoding} = useContext(myContext)
     console.log(repo);
@@ -50,6 +49,7 @@ const Repo = () => {
 )}
         </div>
           <Link id='repo-home-button' to='/'> Home </Link>
+
 
       </div>
     <Pagination 

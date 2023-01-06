@@ -1,16 +1,23 @@
 .repo{
+
     background-color: white;
+
+    
     background-size: 100% 100%;
     height: auto;
     margin-bottom: 1em;
 }
 .repo-style{
+
+
     height: auto;
     padding-bottom: 2em;   
 
 }
 #repo-home-button{
     padding: 10px;
+
+
     color: orange;
     border-radius: 8px;
     width: 80px;

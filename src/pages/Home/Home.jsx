@@ -4,8 +4,6 @@ import  AOS  from 'aos'
 import 'aos/dist/aos.css'
 import { Helmet } from 'react-helmet-async'
 import Header from '../../component/Header/Header'
-import Features from '../../component/Features/Features'
-import Exhibition from '../../component/Exhibition'
 import Awesome from '../../component/Awesome/Awesome'
 import Testimonial from '../../component/Testimonials/Testimonial'
 import Benefits from '../../component/Benefits/Benefits'
@@ -20,6 +18,7 @@ useEffect(()=>{
 
   return (
     <main className='home-sec'>
+
        <Helmet>
 
 <title> Main App </title>
@@ -28,6 +27,7 @@ useEffect(()=>{
 </Helmet>
       <div className="home w-full ">
       <div className="w-full mb-3  ">
+      
         <Header />
         <Welcome/>
           <Awesome/>
@@ -40,6 +40,7 @@ useEffect(()=>{
             <AppSection />
           </div>
       </div>
+      
           <Footer text={text} />
 
     </main>

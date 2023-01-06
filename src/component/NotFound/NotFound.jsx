@@ -7,6 +7,7 @@ import { Helmet } from 'react-helmet-async'
 const NotFound = () => {
   return (
     <section className='h-screen'>
+
        <Helmet>
 
 <title> Main App </title>
@@ -30,6 +31,7 @@ const NotFound = () => {
         
         </div>
         
+
         </div>
     </section>
   )

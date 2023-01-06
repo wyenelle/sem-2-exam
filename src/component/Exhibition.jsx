@@ -5,6 +5,7 @@ import {FaArrowRight} from 'react-icons/fa'
 const Exhibition = () => {
   return (
     <section className='w-full  flex flex-col justify-center py-5 md:p-5 exhibition  text-black'>
+
         <div className="grid grid-cols-2">
             <div className="exhibit-text h-full col-span-2    md:col-span-1 pl-3">
                 <div className="flex pl-2 flex-col justify-center gap-4">

@@ -11,6 +11,7 @@ import Footer from "../../component/Footer/Footer";
 
 const About = () => {
   const text = 'we hope your time here was worth it'
+
   return (
     <main className="w-full flex flex-col ">
      
@@ -46,18 +47,13 @@ const About = () => {
           <Feature/>
         </div>
         <div className="w-full feat-css  flex items-center border ">
+
           <Features />
         </div>
         
       
-      <Link  to= "/about/fleet" className='w-full text-center text-4xl text-gray-500 mb-4 border-4 border-red-500 '> 
-      See Our Latest Fleet
-      </Link>
-      <Routes>
-        <Route path="fleet" element={<Fleet/>} />
-      </Routes>
+      <Link  to= "/about/fleet" className='w-full text-center text-4xl text-gray-500 mb-4 border-4 border-red-500 '> Fleet </Link>
 
-      <Footer text={text} />
     </main>
   );
 };

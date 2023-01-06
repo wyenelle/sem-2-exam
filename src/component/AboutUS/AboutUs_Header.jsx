@@ -34,6 +34,7 @@ const styles = {
                         <div className="w-4/5 mx-auto  px-5 py-3 text-center md:text-start shadow-lg md:shadow-lg ">
                             <h1 className="text-4xl capitalize mb-3 w-4/5 font-extrabold">
                                 we appreciate that you want to know more about us 
+
                             </h1>
                             <h3 className="font-bold my-4 text-xl w-4/5">
                                 with offers like no other

@@ -10,6 +10,7 @@ const Features = () => {
       Also In Our Locker
       </h1>
 
+
         <div className="feature-card w-full grid grid-cols-1 md:grid-cols-3 p-4">
             {
                 data.map(card =>(

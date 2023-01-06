@@ -32,6 +32,7 @@ const value_lg = ['We offer the best Car Hire Services in the whole of West Afri
 const Header = () => {
   const [state, dispatch] = useReducer(reducer, count);
   
+
 const bgColor = 'transparent'
 const textColor = 'black'
   useEffect(() => {
@@ -41,6 +42,7 @@ const textColor = 'black'
     }, 10000);
     return () => clearInterval(interval);
   }, [state]);
+
   return (
     <header className="header-b w-full h-screen  h-screen relative ">
       <div className=" flex flex-col   w-full sub-header md:backdrop-blur-sm h-full">

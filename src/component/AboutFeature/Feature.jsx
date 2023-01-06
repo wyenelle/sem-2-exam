@@ -4,6 +4,7 @@ import { FaEnvelopeOpen,FaList,FaCheck,FaCarSide,FaSearch,FaHandPointDown } from
 import {data} from './data'
 import {FaLockOpen} from 'react-icons/fa'
 
+
 const Feature = () => {
 const icons = [<FaSearch size={40}/>,<FaHandPointDown size={40}/>,<FaList size={40}/>,<FaCheck size={49}/>, <FaCarSide size={40}/>,]
 
@@ -13,6 +14,7 @@ const icons = [<FaSearch size={40}/>,<FaHandPointDown size={40}/>,<FaList size={
       <FaLockOpen size={60} color='gray' className='mx-auto mb-3 hover:shadow-lg shadow-md'/>
       We Offer...
       </h1>
+
         <div className="grid grid-cols-3 h-full md:h-auto w-full mt-6 ">
  {
            data.map(obj => (

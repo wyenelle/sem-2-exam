@@ -5,6 +5,7 @@
 .exhibition{
     height: 80vh;
 }
+
 .exhibition-arrow{
     animation: move-right 3s infinite;
 }
