@@ -30,7 +30,7 @@ const initialState = {
 
 function App() {
   const [repo, dispatch] = useReducer(reducer, initialState);
-
+  console.log(repo.data)
   useEffect(() => {
     axios
       .get("https://api.github.com/users/wyenelle/repos")
@@ -48,7 +48,6 @@ function App() {
   //  aria-* HTML attributes aria-label='Increment Something'>
   return (
     <div className="App">
-      <button onClick={ fire} className='bg-red-500 text-white border py-2 px-2'> click me</button>
       <div className="w-full"></div>
       <myContext.Provider value={{ repo }}>
         <Routes>

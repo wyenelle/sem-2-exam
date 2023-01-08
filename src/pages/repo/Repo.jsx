@@ -67,7 +67,6 @@ const Repo = () => {
     current_post.map( (obj,idx) =><ErrorBoundary><Info isLoading={repo.isLoading}  obj={obj} repo={repo.data} key={idx} /></ErrorBoundary> )
 )}
         </div>
-          <Link id='repo-home-button' to='/'> Home </Link>
 
 
       </div>
