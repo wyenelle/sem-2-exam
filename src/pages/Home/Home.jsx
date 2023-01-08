@@ -36,7 +36,7 @@ useEffect(()=>{
         <Benefits/>
         <Testimonial />
       </div>
-          <div className='md:h-screen h-80  my-2'>
+          <div className='sm:h-screen h-80  my-2'>
             <AppSection />
           </div>
       </div>

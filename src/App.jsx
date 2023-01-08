@@ -37,7 +37,8 @@ function App() {
       .then((response) =>
         dispatch({ type: "FETCH_DATA", payload: response?.data })
       );
-    Array.isArray(repo.data) && fire();
+     fire();
+    console.log(repo.isLoading);
   }, []);
 
     const fire = ()=> dispatch({type:"loading",payload: false })

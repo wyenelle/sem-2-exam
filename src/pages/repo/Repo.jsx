@@ -11,7 +11,7 @@ import RepoProfile from './RepoProfile'
 import img from '../../assets/about/github.png'
 const Repo = () => {
     const {repo} = useContext(myContext)
-    // console.log(repo)
+    console.log(repo.isLoading)
 
 
     // creating pagination here

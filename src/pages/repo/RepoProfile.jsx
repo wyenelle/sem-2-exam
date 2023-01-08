@@ -5,12 +5,12 @@ import myContext from "../../component/context";
 
 const RepoProfile = () => {
   const { repo } = useContext(myContext);
-//   console.log(repo.isLoading);
+  console.log(repo.isLoading);
 
  useEffect(()=>{
     
-        // console.log(repo.isLoading)
-        // const data = repo[0];
+        console.log(repo.isLoading)
+        const data = repo[0];
         // const {owner : {login}} = data
         // console.log(login)
       
