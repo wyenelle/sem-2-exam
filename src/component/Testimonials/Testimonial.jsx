@@ -59,7 +59,7 @@ return (
                 <h2 className='font-extrabold text-red-500 text-2xl capitalize'>{info.name}</h2>
                </div>
             </div>
-            <div className="flex absolute justify-between items-center top-60 md:top-70   w-full">
+            <div className="flex absolute justify-between items-center top-80 md:top-70   w-full">
             <FaAngleLeft onClick={prev} size={70} className=' text-white arrow-left    ' />
             <FaAngleRight onClick={next} size={70} className=' text-white  pr-0 arrow-right ' />
             </div>
