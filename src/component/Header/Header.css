@@ -16,6 +16,10 @@
     background: url('../../assets//about/thread-69451558-12676338104478950268.png');
     background-size: 100% 100%;
 }
+.header-icon{
+    position: absolute;
+    top: 27rem;
+}
     
 
 }
@@ -25,7 +29,7 @@
     }
 }
 .header-nav{
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .car-logo{

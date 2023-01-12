@@ -27,7 +27,7 @@ const styles = {
          <div className=" z-10 w-full md:absolute top-0">
         <Nav/>
       </div>
-        <div className="pl-4 grid grid-cols-3 md:h-full header-grid   backdrop-blur-sm  ">
+        <div className="pl-4 grid grid-cols-3 h-full header-grid   backdrop-blur-sm  ">
             <div className="col-span-3 md:col-span-1 mt-9 md:mt-0 ">
                 
                     <div className='h-full flex flex-col justify-center items-center  '>
@@ -40,9 +40,7 @@ const styles = {
                                 we appreciate that you want to know more about us 
 
                             </h1>
-                            <h3 className="font-bold my-4 text-xl w-4/5">
-                                with offers like no other
-                            </h3>
+                            
                         </div>
                     </div>
             </div>
@@ -53,7 +51,7 @@ const styles = {
                 </div>
             </div>
 
-            <div className="col-span-3 w-full     md:px-6 px-2 h-20 md:absolute bottom-0  " data-aos='fade-left'>
+            <div className="col-span-3 w-full  hidden md:block   md:px-6 px-2 h-20 md:absolute bottom-0  " data-aos='fade-left'>
                 <div className="flex justify-between items-center h-full  md:w-11/12 mx-auto gap-6 py-3  ">
                 <SiAudi size={40} className='text-gray-500 shadow-lg' />
                 <SiNissan size={40} className='text-gray-500 shadow-lg' />

@@ -41,7 +41,7 @@ useEffect(() => {
         </div>
         
       
-      <Link  to= "/about/fleet" className='w-full text-center text-4xl text-gray-500 mb-4 border-4 border-red-500 '> Fleet </Link>
+      <Link  to= "/about/fleet" className='w-full text-center text-4xl text-gray-500 mb-4  '> Fleet </Link>
       <Routes>
         <Route path='/fleet' element={<Fleet/>} />
       </Routes>
