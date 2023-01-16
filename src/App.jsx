@@ -46,8 +46,8 @@ function App() {
     const fire = ()=> dispatch({type:"loading",payload: false })
   // data aos animate once === data-aos-once ='true'
   // adding accessibility to the project
-  // Using <Fragment> instead of <div> fixes the UI.
   //  aria-* HTML attributes aria-label='Increment Something'>
+  // 081301
   return (
     <div className="App">
       <div className="w-full"></div>
