@@ -30,12 +30,12 @@ const RepoProfile = () => {
         <div className="col-span-1 md:pl-2 md:mt-3 md:col-span-3 ">
           <div
             style={styles}
-            className=""
+            className="photo border-4  w-20 md:w-60  h-20 md:h-60"
           >
-            <img src={avatarUrl} alt='photo' className="photo border-4  w-20 md:w-60  h-20 md:h-60"/>   
+            <img src={avatarUrl} alt='photo' className=" profile-img w-20 md:w-60 rounded-full  h-20 md:h-60"/>   
           </div>
         </div>
-        <div className="col-span-3 w-full md:mt-3  md:col-span-4  h-full">
+        <div className="col-span-3 w-full md:mt-3 text-center md:col-span-4  h-full">
           <div className="repo-name flex flex-col h-full  md:items-center justify-center w-full ">
             <h1 className="w-7/12 text-3xl  my-2  h-auto "> {name} </h1>
             {/* <p className=" mt-1"> {login}</p> */}
