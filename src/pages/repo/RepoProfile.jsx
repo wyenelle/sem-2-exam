@@ -14,7 +14,8 @@ const RepoProfile = () => {
         console.log(repo.isLoading)
         const {owner : {login,avatar_url}} = repo.data[0]
         setName(login)
-        setAvatarUrl(avatarUrl)
+        setAvatarUrl(avatar_url)
+        console.log(avatarUrl);
       
      
  },[])
@@ -29,9 +30,9 @@ const RepoProfile = () => {
         <div className="col-span-1 md:pl-2 md:mt-3 md:col-span-3 ">
           <div
             style={styles}
-            className="photo border-4  w-20 md:w-60  h-20 md:h-60"
+            className=""
           >
-            <img src={avatarUrl} alt='photo'/>   
+            <img src={avatarUrl} alt='photo' className="photo border-4  w-20 md:w-60  h-20 md:h-60"/>   
           </div>
         </div>
         <div className="col-span-3 w-full md:mt-3  md:col-span-4  h-full">
