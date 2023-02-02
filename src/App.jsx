@@ -30,7 +30,6 @@ const initialState = {
 
 function App() {
   const [repo, dispatch] = useReducer(reducer, initialState);
-  console.log(repo.data)
 
   useEffect(() => {
     axios
@@ -39,7 +38,6 @@ function App() {
         dispatch({ type: "FETCH_DATA", payload: response?.data })
       );
      fire();
-    console.log(repo.isLoading);
   }, []);
   
 // FIRES A DISPATCH THAT CHANGES THE STATE
@@ -54,7 +52,7 @@ function App() {
       <myContext.Provider value={{ repo }}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/repo" element={<Repo />} />
+          <Route path="/repo" element={ <Repo />} />
           <Route path="/about/*" element={<About />} />
 
           <Route path="*" element={<NotFound />} />
