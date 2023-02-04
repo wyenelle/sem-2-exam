@@ -44,14 +44,14 @@ margin-top: 4rem;
     font-size: x-large;
 }
 .head-carousel{
-    animation: header-fade 10s infinite;
+    animation: header-fade 7s infinite;
 }
 @keyframes header-fade{
     0%{
 opacity: 0;
     }
     10%{
-opacity: 1;
+opacity: 0;
 
     }
     25%{
@@ -61,7 +61,7 @@ opacity: 1;
     opacity: 1;
 }
 75%{
-    opacity: 0;
+    opacity: 1;
 }
 100%{
     opacity: 0;

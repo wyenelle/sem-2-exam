@@ -39,7 +39,7 @@ const textColor = 'black'
     let interval = setInterval(() => {
     dispatch({ type: "move" })
 
-    }, 10000);
+    }, 7000);
     return () => clearInterval(interval);
   }, [state]);
 
