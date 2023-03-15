@@ -10,13 +10,13 @@ import axios from "axios";
 import ErrorBoundary from "./component/ErrorBoundary";
 import BoundaryTest from "./pages/BoundaryTest";
 import About from "./pages/About/About";
+import Tosin from './pages/Tosin.jsx'
 // REDUCER FUNCTION
 const reducer = (repo, action) => {
   switch (action.type) {
     case "FETCH_DATA":
       return { ...repo, data: action.payload };
     case "loading":
-      console.log(action.payload)
       return { ...repo, isLoading: action.payload };
     default:
       throw new Error("wrong!!");
@@ -54,6 +54,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/repo" element={ <Repo />} />
           <Route path="/about/*" element={<About />} />
+          <Route path="/tosin" element={<Tosin />} />
 
           <Route path="*" element={<NotFound />} />
           <Route
